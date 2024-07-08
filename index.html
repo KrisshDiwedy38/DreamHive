@@ -7,25 +7,27 @@
    <link rel="shortcut icon" href="logo-and-pics/logo.png" type="image/x-icon">
    <link rel="stylesheet" href="style.css">
    <link rel="stylesheet" href="lp-style.css">
-   <link rel="stylesheet" href="header.css">
 </head>
 <body>
    <header>
-      <div>
-         <a href="index.html">
-            <img src="logo-and-pics/logo.png" alt="logo" class="dh-logo">
-         </a>
+      <div class="header-box">
+         <div>
+            <a href="index.html">
+               <img src="logo-and-pics/logo.png" alt="logo" class="dh-logo">
+            </a>
+         </div>
       </div>
    </header>
    <main>
       <p class="main-slogan"> 
-         SHARE . TRACK . ORGANIZE .
-      </label>
+         Share. Track. Organize.
+      </p>
       <p class="main-slogan-sub">
          do it all with DreamHive
-      </label>
+      </p>
       <div class="preview">
-         <img src="logo-and-pics/bob-tag.png"  class="tag" style="margin: 150px 0 0 0; ">
+         <img src="logo-and-pics/bob-tag.png"  class="main-tag" >
+         <img src="logo-and-pics/bob-tag2.png"  class="bob-tag"> 
          <img src="logo-and-pics/giphy.webp" class="p-image">
          <p class="p-text">
             are you clueless like bob? <br>
@@ -34,7 +36,7 @@
             track your progress ? <br>
             or maybe just write about how cute bob is.<br>
             we got it all. 
-         </label>
+         </p>
       </div>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSeFBwG8Vqnqa4eyP97rR44i3TFsPIZlv0j9MjpYeRAr4aS2uQ/viewform?usp=sf_link">
          <button  class="CAD" id="CAD">
@@ -42,45 +44,48 @@
          </button>
       </a>
    </main>
-   <section class="journey">
+   <section class="journey" style="border-top: 1px solid rgba(0,0,0,0.2); margin-top: 100px;">
       <p class="jn-text">
-         share your journey with <br> vlogs and blogs
+         Share your journey with vlogs and blogs.
       </label>
       <div class="jn-content">
          <div class="jn-pics">
             <div class="j-pic">
                <img src="logo-and-pics/social-media.png" style="width: 100%; border-radius: 10px">
-               <div class="comm-pic">
-                  <img src="logo-and-pics/comment.png" style="width: 100%; border-radius: 10px";>
-               </div>
+            <div class="comm-pic">
+               <img src="logo-and-pics/comment.png" style="width: 70%; border-radius: 10px";>
+               <p style="font-size: 1rem;">
+                  Get feedbacks from others like you.
+               </p>
+            </div>
+               
             </div>
          </div>
       </div>
    </section>
-   <section class="workshop">
+   <section class="workshop" style="border-top: 1px solid rgba(0,0,0,0.2);">
       <p class="ws-text">
-         Journal about your day<br>set and track your tasks and meetings<br> in workshop
-      </label>
-      <div class="ws-pics">
+         Journal about your day <br>Set and track your tasks and meetings in workshop
+      <div class="ws-content">
          <div class="ws-row">
-            <img src="logo-and-pics/calendar-tag.png" class="tag" style="margin: 50px 0 0 -130px; height: 50px;">
-            <div class="calendar">
-               <img src="logo-and-pics/calendar.png" style="height: 350px;">
+            <div class="ws-tag">
+               <img src="logo-and-pics/calendar-tag.png" alt="Calendar" class="tag" id="calendar-tag">
             </div>
-            <div class="journal">
-               <img src="logo-and-pics/journal.png" style="height: 350px;">
+            <div class="ws-tag">
+               <img src="logo-and-pics/journal-tag.png" alt="Journal" class="tag" id="journal-tag">
             </div>
-            <img src="logo-and-pics/journal-tag.png" class="tag" style="margin: 100px 0 0 -50px; height: 50px;">
+            <div class="ws-tag">
+               <img src="logo-and-pics/todo-tag.png" alt="Todo List" class="tag" id="todo-tag">
+            </div>
+            <div class="ws-tag">
+               <img src="logo-and-pics/tracker-tag.png" alt="Habit tracker"  class= "tag" id="trackers-tag" >
+            </div>
          </div>
-         <div class="ws-row">
-            <img src="logo-and-pics/todo-tag.png" class="tag" style="margin: 50px -30px 0 0; height: 60px;">
-            <div class="todo">
-               <img src="logo-and-pics/todo.png" style="height: 250px; width: 350px;">
-            </div>
-            <div class="tracker">
-               <img src="logo-and-pics/tracker.png" style="height: 350px;">
-            </div>
-            <img src="logo-and-pics/tracker-tag.png" class="tag" style="margin: 50px 0 0 -40px; height: 60px;">
+         <div class="ws-pics">
+            <img src="logo-and-pics/calendar.png" id="calendar" class="pic">
+            <img src="logo-and-pics/journal.png" id="journal" class="pic">
+            <img src="logo-and-pics/todo.png" id="todo" class="pic">
+            <img src="logo-and-pics/tracker.png" id="track" class="pic">
          </div>
          <a href="https://docs.google.com/forms/d/e/1FAIpQLSeFBwG8Vqnqa4eyP97rR44i3TFsPIZlv0j9MjpYeRAr4aS2uQ/viewform?usp=sf_link">
             <button  class="CAD" id="CAD">
@@ -103,17 +108,16 @@
       </form>
    </div>
 -->
-   <footer>
-      <div class="footer-logo">
+   <footer style="border-top: 1px solid rgba(0,0,0,0.2);">
          <img src="logo-and-pics/logo-text.png" class="f-logo">
          <p class="f-text">share.track.organize</p>
-      </div>
    </footer>
 
 <!--
-   <script src="lp-script.js"></script>
+   
    <script src="form-submit.js"></script>
 -->
+   <script src="lp-script.js"></script>
 
 </body>
 </html>
