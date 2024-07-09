@@ -149,7 +149,13 @@ main{
 .tag{
    width: 90%;
 }
+.tag.active{
+   width:100% ;
+}
 
+#calendar-tag{
+   width: 110%;
+}
 .ws-pics{
    width: 100%;
    height: 400px;
