@@ -25,12 +25,15 @@ const calendarTag = document.getElementById('calendar-tag');
 const todoTag = document.getElementById('todo-tag');
 const journalTag = document.getElementById('journal-tag');
 const trackerTag = document.getElementById('trackers-tag');
+const tag = document.querySelectorAll('.tag');
 
 calendarTag.addEventListener('click', () => {
     calendarPic.style.visibility ='visible';
     todoPic.style.visibility = 'hidden';
     journalPic.style.visibility='hidden';
     trackerPic.style.visibility='hidden';
+    tagHighlight(0)
+
 })
 
 todoTag.addEventListener('click', () => {
@@ -38,16 +41,32 @@ todoTag.addEventListener('click', () => {
     todoPic.style.visibility = 'visible';
     journalPic.style.visibility='hidden';
     trackerPic.style.visibility='hidden';
+    tagHighlight(1)
 })
 journalTag.addEventListener('click', () => {
     calendarPic.style.visibility ='hidden';
     todoPic.style.visibility = 'hidden';
     journalPic.style.visibility='visible';
     trackerPic.style.visibility='hidden';
+    tagHighlight(2)
 })
 trackerTag.addEventListener('click', () => {
     calendarPic.style.visibility ='hidden';
     todoPic.style.visibility = 'hidden';
     journalPic.style.visibility='hidden';
     trackerPic.style.visibility='visible';
+    tagHighlight(3)
 })
+
+
+function tagHighlight(n){
+    let arr = Array.from(tag);
+    for ( let i in arr){
+        if( i == n ){
+            tag[i].style.width = '110%';
+        }
+        else{
+            tag[i].style.width = '90%';
+        }
+    }
+}
