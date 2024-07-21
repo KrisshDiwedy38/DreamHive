@@ -66,7 +66,7 @@ function tagHighlight(n){
             tag[i].style.width = '110%';
         }
         else{
-            tag[i].style.width = '90%';
+            tag[i].style.width = '70%';
         }
     }
 }
