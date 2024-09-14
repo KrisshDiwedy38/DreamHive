@@ -155,12 +155,12 @@ main{
 .tag{
    width: 70%;
    height: max-content;
-   transition:  ease;
+   transition: 0.5s ease;
 }
 
 #calendar-tag{
    width: 110%;
-   transition:  ease;
+   transition: 0.5s ease;
 }
 
 .ws-pics{
@@ -177,7 +177,7 @@ main{
    height: 70%;
    object-fit:contain;
    z-index: 5;
-   transition: ease;
+   transition: 0.5s ease;
 }
 #todo ,
 #journal ,
