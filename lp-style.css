@@ -177,7 +177,6 @@ main{
    height: 70%;
    object-fit:contain;
    z-index: 5;
-   transition: 0.5s ease;
 }
 #todo ,
 #journal ,
