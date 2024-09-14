@@ -155,10 +155,12 @@ main{
 .tag{
    width: 70%;
    height: max-content;
+   transition:  2s ease;
 }
 
 #calendar-tag{
    width: 110%;
+   transition:  2s ease;
 }
 
 .ws-pics{
