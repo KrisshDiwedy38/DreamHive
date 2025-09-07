@@ -1,0 +1,423 @@
+/* HEADER */
+html{
+   display: flex;
+   justify-content: center;
+   font-family: "Inter", sans-serif;
+   align-content: center;
+}
+
+header{
+   width: 100%;
+   height: max-content;
+   position: fixed;
+   display: flex;
+   justify-content: center;
+   background-color: rgba(255, 255,255, 0.7);
+   backdrop-filter: blur(16px);
+   top:0;
+   align-self: center;
+   z-index: 100;
+}
+
+.header-box{
+   width: 1200px;
+   height: max-content;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 100;
+}
+
+.dh-logo{
+   height: 70px;
+   width: 70px;
+}
+
+
+body{
+   padding-top: 120px;
+   width: 1000px;
+   display: flex;
+   justify-content: center;
+
+}
+
+/* MAIN */
+main{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.main-slogan{
+   font-family: "Inter", sans-serif;
+   font-size: 5rem;
+   color: black;
+   margin: 0;
+   text-shadow: none;
+   font-weight: 600;
+}
+
+.main-slogan-sub{
+   margin: 0;
+   color: black;
+   text-shadow: none;
+}
+
+.preview{
+   display: flex;
+   flex-direction: row;
+   margin-top: 10px;
+   height: 450px;
+   width: 100%;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+}
+
+.main-tag{
+   width: 200px;
+}
+.bob-tag{
+   height: 80px;
+   width: 80px;
+   object-fit: contain;
+   visibility: hidden;
+}
+
+.bob-text{
+   flex: 1;
+   object-fit: contain;
+}
+.p-image{
+   width: 300px;
+   height: 100%;
+   border-radius: 50%;
+   object-fit: cover;
+}
+.p-text{
+   color: black;
+   width: 600px;
+   text-shadow: none;
+   font-size: 25px;
+   text-align: unset;
+}
+.CAD{
+   margin-top: 70px;
+   padding: 1rem  ;
+   width: max-content;
+   height: max-content;
+   color: black;
+   background-color: white;
+   border: 3px solid black;
+   border-radius: 10px;
+   font-family: "Inter", sans-serif;
+   font-size: 1.2rem;
+   font-weight: 600;
+   align-self: center;
+   transition: 0.2s ease;
+}
+.CAD:hover{
+   background-color: black;
+   color: white;
+   cursor: pointer;
+}
+.CAD:active{
+   background-color: white;
+   color: rgb(0, 0, 0);
+}
+
+/* WORKSHOP SECTION */
+
+.ws-text{
+   font-size: 3rem;
+   color: black;
+   margin-top: 100px;
+   text-shadow: none;
+   font-weight: 600;
+}
+
+.ws-content{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 10px;
+   margin: 100px 0 50px 0;
+}
+
+.ws-row{
+   display: flex;
+   flex-direction: row;
+   width: 100%;
+   column-gap: 20px;
+   justify-content: center;
+}
+
+.tag{
+   width: 70%;
+   height: max-content;
+   transition: 0.5s ease;
+}
+
+#calendar-tag{
+   width: 110%;
+   transition: 0.5s ease;
+}
+
+.ws-pics{
+   width: 100%;
+   height: 400px;
+   position: relative;
+   justify-content: center;
+   display: flex;
+}
+
+.pic{
+   position: absolute;
+   width: 70%;
+   height: 70%;
+   object-fit:contain;
+   z-index: 5;
+}
+#todo ,
+#journal ,
+#track{
+   visibility: hidden;
+}
+
+/* JOURNEY SECTION */
+
+
+.jn-content{
+   margin-top: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.jn-text{
+   font-size: 3rem;
+   color: black;
+   margin-top: 100px;
+   text-shadow: none;
+   font-weight: 600;
+}
+
+.jn-pics{
+   width: 100%;   
+   padding: 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 1000px;
+}
+.j-pic{
+   height: 500px;
+   width: 800px;
+}
+
+.comm-pic{
+   height: max-content;
+   width: 100%;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+/* FOOTER */
+
+footer{
+   margin-top: 100px;
+   padding: 50px;
+   height: 400px;
+   align-items: top;
+   display: flex;
+   flex-direction: column;
+   column-gap: 50px;
+   justify-content: center;
+   align-items: center;
+}
+.f-logo{
+   height: 350px;
+   width: 300px;
+}
+
+.f-text{
+   font-size: 30px;
+}
+
+
+/* Modal overlay */
+.modal-overlay {
+   display: none;
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background-color: rgba(0, 0, 0, 0.5);
+   backdrop-filter: blur(8px);
+   z-index: 1000;
+   animation: fadeIn 0.3s ease-out;
+}
+
+.modal-overlay.active {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+@keyframes fadeIn {
+   from {
+         opacity: 0;
+   }
+   to {
+         opacity: 1;
+   }
+}
+
+/* Form container */
+.form-container {
+   background: white;
+   width: 400px;
+   max-width: 90vw;
+   border-radius: 12px;
+   padding: 40px;
+   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+   position: relative;
+   animation: slideUp 0.4s ease-out;
+   transform-origin: center;
+}
+
+@keyframes slideUp {
+   from {
+         transform: translateY(50px) scale(0.9);
+         opacity: 0;
+   }
+   to {
+         transform: translateY(0) scale(1);
+         opacity: 1;
+   }
+}
+
+/* Close button */
+.close {
+   position: absolute;
+   top: 15px;
+   right: 20px;
+   background: none;
+   border: none;
+   font-size: 24px;
+   font-weight: bold;
+   color: #999;
+   cursor: pointer;
+   transition: color 0.3s ease;
+   width: 30px;
+   height: 30px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.close:hover {
+   color: #333;
+}
+
+/* Form styles */
+.sign-up-form {
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+}
+
+.sign-up-form h2 {
+   text-align: center;
+   color: #333;
+   margin-bottom: 10px;
+   font-size: 24px;
+}
+
+.sign-up-form label {
+   font-weight: 600;
+   color: #555;
+   font-size: 14px;
+   margin-bottom: 5px;
+}
+
+.sign-up-form input {
+   padding: 12px 16px;
+   border: 2px solid #e0e0e0;
+   border-radius: 8px;
+   font-size: 16px;
+   transition: border-color 0.3s ease, box-shadow 0.3s ease;
+   background-color: #fafafa;
+}
+
+.sign-up-form input:focus {
+   outline: none;
+   border-color: #667eea;
+   box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+   background-color: white;
+}
+
+.submit-button {
+   background: black;
+   color: white;
+   border: none;
+   padding: 14px;
+   font-size: 16px;
+   font-weight: 600;
+   border-radius: 8px;
+   cursor: pointer;
+   transition: transform 0.2s ease, box-shadow 0.2s ease;
+   margin-top: 10px;
+}
+
+.submit-button:hover {
+   transform: translateY(-1px);
+   box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.submit-button:disabled {
+   background: black;
+   cursor: not-allowed;
+   transform: none;
+   box-shadow: none;
+}
+
+/* Loading animation */
+.loading {
+   display: none;
+   text-align: center;
+   color: #667eea;
+   margin-top: 10px;
+}
+
+.spinner {
+   border: 2px solid #f3f3f3;
+   border-top: 2px solid #667eea;
+   border-radius: 50%;
+   width: 20px;
+   height: 20px;
+   animation: spin 1s linear infinite;
+   display: inline-block;
+   margin-right: 10px;
+}
+
+@keyframes spin {
+   0% { transform: rotate(0deg); }
+   100% { transform: rotate(360deg); }
+}
+
+/* Success message */
+.success-message {
+   display: none;
+   background: #d4edda;
+   color: #155724;
+   padding: 15px;
+   border-radius: 8px;
+   text-align: center;
+   margin-top: 15px;
+   border: 1px solid #c3e6cb;
+}
+

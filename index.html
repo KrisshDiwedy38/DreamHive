@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>DreamHive</title>
+   <link rel="shortcut icon" href="logo-and-pics/logo.png" type="image/x-icon">
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="lp-style.css">
+   <link rel="stylesheet" href="lp-responsive.css">
+</head>
+<body>
+   <header>
+      <div class="header-box">
+         <div>
+            <a href="index.html">
+               <img src="logo-and-pics/logo.png" alt="logo" class="dh-logo">
+            </a>
+         </div>
+      </div>
+   </header>
+   <main>
+      <p class="main-slogan"> 
+         Share. Track. Organize. Connect.
+      </p>
+      <p class="main-slogan-sub">
+         do it all with DreamHive
+      </p>
+      <div class="preview">
+         <img src="logo-and-pics/bob-tag.png"  class="main-tag" >
+         <img src="logo-and-pics/bob-tag2.png"  class="bob-tag"> 
+         <img src="logo-and-pics/giphy.webp" class="p-image">
+         <img src="logo-and-pics/bob-text.png" class="bob-text">
+      </div>
+         <button  class="CAD" data-trigger = "form" id="CAD">
+            SIGN UP ON THE WAITLIST
+         </button>
+      </a>
+   </main>
+   <section class="journey" style="border-top: 1px solid rgba(0,0,0,0.2); margin-top: 100px;">
+      <p class="jn-text">
+         Share your journey with vlogs and blogs.
+      </label>
+      <div class="jn-content">
+         <div class="jn-pics">
+            <div class="j-pic">
+               <img src="logo-and-pics/social-media.png" style="width: 100%; border-radius: 10px">
+            <div class="comm-pic">
+               <img src="logo-and-pics/comment.png" style="width: 70%; border-radius: 10px";>
+               <p style="font-size: 1.5rem;">
+                  Get feedbacks from others like you.
+               </p>
+            </div>
+               
+            </div>
+         </div>
+      </div>
+   </section>
+   <section class="workshop" style="border-top: 1px solid rgba(0,0,0,0.2);">
+      <p class="ws-text">
+         Journal about your day <br>Set and track your tasks and meetings in workshop
+      <div class="ws-content">
+         <div class="ws-row">
+            <div class="ws-tag">
+               <img src="logo-and-pics/calendar-tag.png" alt="Calendar" class="tag" id="calendar-tag">
+            </div>
+            <div class="ws-tag">
+               <img src="logo-and-pics/todo-tag.png" alt="Todo List" class="tag" id="todo-tag">
+            </div>
+            <div class="ws-tag">
+               <img src="logo-and-pics/journal-tag.png" alt="Journal" class="tag" id="journal-tag">
+            </div>
+            <div class="ws-tag">
+               <img src="logo-and-pics/tracker-tag.png" alt="Habit tracker"  class= "tag" id="trackers-tag" >
+            </div>
+         </div>
+         <div class="ws-pics">
+            <img src="logo-and-pics/calendar.png" id="calendar" class="pic">
+            <img src="logo-and-pics/journal.png" id="journal" class="pic">
+            <img src="logo-and-pics/todo.png" id="todo" class="pic">
+            <img src="logo-and-pics/tracker.png" id="track" class="pic">
+         </div>
+            <button  class="CAD" data-trigger = "form" id="CAD">
+               SIGN UP NOW!
+            </button>
+      </div>
+   </section>
+
+   <div class="modal-overlay" id="modal-overlay">
+        <div class="form-container" id="form-container">
+            <button class="close" id="close-button">×</button>
+            <form class="sign-up-form" name="google-sheet" id="signup-form">
+                <h2>Waitlist Sign Up</h2>
+                
+                <label for="fName">First Name:</label>
+                <input type="text" class="f-name" id="fName" name="first-name" required>
+                
+                <label for="lName">Last Name:</label>
+                <input type="text" class="l-name" id="lName" name="last-name" required>
+                
+                <label for="Email">Email:</label>
+                <input type="email" class="email" id="Email" name="email" required>
+                
+                <button type="submit" class="submit-button" id="submit-button">SUBMIT</button>
+                
+                <div class="loading" id="loading">
+                    <div class="spinner"></div>
+                    Submitting...
+                </div>
+                
+                <div class="success-message" id="success-message">
+                    Thank you! Your information has been submitted successfully.
+                </div>
+            </form>
+        </div>
+      </div>
+   <footer style="border-top: 1px solid rgba(0,0,0,0.2);">
+         <img src="logo-and-pics/logo-text.png" class="f-logo">
+         <p class="f-text">share.track.organize.connect.</p>
+   </footer>
+
+
+   <script src="form-submit.js"></script>
+
+   <script src="lp-script.js"></script>
+
+</body>
+</html>
