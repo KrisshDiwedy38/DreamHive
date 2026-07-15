@@ -20,4 +20,4 @@ By blending **social networking** with **productivity tools**, DreamHive helps y
 ## 🛠 Tech Stack
 
 - **Backend:** Django, PostgreSQL, Redis, JWT, WebSockets  
-- **Frontend:** React, JavaScript, CSS  
+- **Frontend:** React, Typescript, CSS  
